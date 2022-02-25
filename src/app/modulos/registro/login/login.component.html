@@ -1,0 +1,9 @@
+<form [formGroup]="formularioLogin" (ngSubmit)="sendCredential()">
+
+    <label for="user_email">Email</label>
+    <input id="user_email" type="email" placeholder="Pon tu correo" formControlName="email">
+    <label for="user_password">Contraseña</label>
+    <input id="user_password" type="password" placeholder="Pon tu contraseña" formControlName="password">
+    <button>ingresar</button>
+
+</form>
