@@ -26,11 +26,11 @@ export class LoginComponent implements OnInit {
   }
   sendCredential(){
     console.log(this.formularioLogin.value);
-    this.client.doLogin('/logidn', this.formularioLogin.value).subscribe(
-      data=>console.log('respuesta',data),
-      err=>console.log('error->',err),
-      
-      
+    this.client.doLogin('/login', this.formularioLogin.value).subscribe(
+      {
+        next: (data)=>console.log('respuesta',data),
+        error: (err)=>console.log('error->',err),
+      }
     )
   }
 

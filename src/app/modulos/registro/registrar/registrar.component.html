@@ -1,7 +1,7 @@
-<form action="">
-    <input type="text" placeholder="Nombre">
-    <input type="text" placeholder="Apellidos">
-    <input type="email" placeholder="Correo">
-    <input type="password" placeholder="Contraseña">
+<form [formGroup]="formRegister" (ngSubmit)="sendUser()">
+    <input type="text" placeholder="Nombre" formControlName="name">
+    <input type="text" placeholder="Apellidos" formControlName="surname">
+    <input type="email" placeholder="Correo" formControlName="email">
+    <input type="password" placeholder="Contraseña" formControlName="password">
     <button>Registrarse</button>
 </form>
