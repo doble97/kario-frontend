@@ -8,6 +8,7 @@ import { RegistroModule } from './modulos/registro/registro.module';
 import { KarioRoutingModule } from './kario-routing';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisteredRoutingModule } from './modulos/registered-user/registered-routing';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     RegistroModule,
     RouterModule,
-    KarioRoutingModule
+    KarioRoutingModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
